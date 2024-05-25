@@ -33,7 +33,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          ref: luci-app-droidnet
+          ref: master
 
       - name: Preparing IPK
         run: |
