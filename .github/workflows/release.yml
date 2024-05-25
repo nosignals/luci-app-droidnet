@@ -38,8 +38,9 @@ jobs:
       - name: Preparing IPK
         run: |
               echo ""
+              ls -l
               mkdir feeds artifacts
-              cp -rf ./luci-app-droidnet ./feeds
+              cp -rf ./luci-app-droidnet/luci-app-droidnet ./feeds
         
       - name: Building IPK
         uses: nosignals/gh-action-sdk@main
